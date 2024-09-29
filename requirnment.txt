@@ -1,0 +1,4 @@
+!pip install chromadb
+!git clone https://huggingface.co/datasets/NahedAbdelgaber/evaluating-student-writing
+!git clone  https://huggingface.co/datasets/transformersbook/emotion-train-split
+!pip install llama-index
