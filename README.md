@@ -18,7 +18,7 @@ pip install chromadb
 pip install llama-index
 ```
 
-You also need to clone the required datasets from Hugging Face:
+You also need to clone the required datasets from Hugging Face If u you just want to check it out and test the working :) :
 
 ```bash
 git clone https://huggingface.co/datasets/NahedAbdelgaber/evaluating-student-writing
@@ -31,7 +31,7 @@ git clone https://huggingface.co/datasets/transformersbook/emotion-train-split
    - The notebook loads the "Evaluating Student Writing" dataset and splits the text into chunks for embedding.
 
 2. **Embedding Creation**: 
-   - Using the `BAAI/bge-base-en-v1.5` model, text chunks are converted into vector embeddings.
+   - Using the `BAAI/bge-base-en-v1.5` model, text chunks are converted into vector embeddings. You can any model of your liking.
 
 3. **ChromaDB Integration**: 
    - The generated embeddings, along with their corresponding text chunks, are stored in ChromaDB for persistence and later querying.
@@ -57,7 +57,8 @@ query_collection(
   n_results=1
 )
 ```
-
+## Files
+There are 2 files in here. The simple one just create a vector database of a single file and the advance one can work on multiple files with differnt extensions and create vector database of them and you can also test it out on a text-gen model.
 ## Dependencies
 
 - [ChromaDB](https://docs.trychroma.com/)
@@ -73,3 +74,5 @@ query_collection(
 ## License
 
 This repository is licensed under the MIT License.
+
+### Thanks for checking it out :)
